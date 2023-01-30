@@ -662,17 +662,24 @@ img {
 }
 
 .services__modal.services{
-  row-gap: 1rem;
+  display: grid;
 }
 
 .services__modal-service{
   display: flex;
+  font-weight: lighter;
 }
 
 .services__modal-title{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
+}
+
+.services__modal-subtitle{
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
 }
 
 .services__modal-close{
@@ -686,8 +693,17 @@ img {
 
 .services__modal-icon{
   color: var(--first-color);
-  margin-right: var(--mb-0-25);
+  margin-right: var(--mb-1);
 }
+
+
+.services__modal-majorminor{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: var(--mb-0-75);
+}
+
 /* Active Modal */
 
 .active-modal{
